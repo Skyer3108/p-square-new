@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import './Login.css'
 import { StoreContext } from '../../Context/StoreContext'
+import { assets } from '../../assets/assets'
 const LoginPopUp = ({ handleLoginSuccess }) => {
 
     const [currentState, setCurrentState] = useState('Login')
@@ -72,8 +73,8 @@ const LoginPopUp = ({ handleLoginSuccess }) => {
             <div className="login-container">
 
                 <div className='login-right'>
-                    <div>
-                        <img src="#" alt='logo' />
+                    <div className='logo-log'>
+                        <img src={assets.logo} alt='logo' />
                     </div>
 
                     <div className='login-form'>
